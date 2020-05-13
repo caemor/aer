@@ -2,9 +2,9 @@
 // needs to be run with sudo because of some sysfs_gpio permission problems and follow-up timing problems
 // see https://github.com/rust-embedded/rust-sysfs-gpio/issues/5 and follow-up issues
 
+use aer::*;
 use anyhow::Result;
 use core::time::Duration;
-use nidus::*;
 use std::thread;
 
 fn main() {
